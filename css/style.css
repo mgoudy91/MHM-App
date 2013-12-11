@@ -1,0 +1,197 @@
+/* Fonts */
+@font-face {
+    font-family: DS-Digital;
+    src: url(../fonts/DS-DIGI.TTF);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: DS-Digital;
+    src: url(../fonts/DS-DIGIB.TTF);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: DS-Digital;
+    src: url(../fonts/DS-DIGII.TTF);
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: DS-Digital;
+    src: url(../fonts/DS-DIGIT.TTF);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* Style */
+body{
+    font-family: 'DS-Digital';
+}
+
+#container{
+    width: 400px;
+    height: 300px;
+    background-color: #cdcdcd;
+}
+
+#device{
+    position: relative;
+    top: 79px;
+    left: 45px;
+    width: 308px;
+    height: 148px;
+    /*TODO: TEXTURE*/
+    background-color: #323232; 
+}
+
+#device_content{
+    position: relative;
+    top: 26px;
+    left: 26px;
+    width: 256px;
+    height: 97px;
+    /*background-color: green;*/
+}
+
+#first_row{
+    width: 256px;
+    height: 64px;
+}
+
+#screen{
+    display: inline-block;
+    background-color: #b5cfdd;
+    width: 191px;
+    height: 64px;
+    border-radius: 2px;
+}
+
+#clock_img{
+    padding: 19px 23px 0 14px;
+}
+
+#clock_txt{
+    font-size: 42px;
+    margin: 0;
+    min-width: 84px;
+    display: inline-block;
+    opacity:0.0;
+}
+#clock_unit{
+    padding-left: 1px;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+    opacity:0.0;
+}
+
+#button_console{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 65px;
+    height: 64px;
+}
+
+#arrow_console{
+    background-color: #1d1d1f;
+    float: right;
+    width: 53px;
+    height: 28px;
+    border-radius: 2px;
+    margin-bottom: 6px;
+}
+
+#arrow_console button{
+    height: 22px;
+    width: 22px;
+    margin: 3px 0;
+    border-radius: 1px;
+}
+#arrow_console button:first-child{
+    margin-left: 3px;
+}
+
+#power_console{
+    background-color: #1d1d1f;
+    float: right;
+    width: 53px;
+    height: 28px;
+    border-radius: 2px;
+}
+#button_power{
+    height: 22px;
+    width: 47px;
+    margin: 3px;
+    border-radius: 1px;
+}
+
+#second_row{
+    width: 256px;
+    height: 33px;
+    /*background-color: yellow;*/
+}
+
+#onoffconsole{
+    display: inline-block;
+    margin-top: 14px; 
+}
+
+#onoffconsole p{
+    position: relative;
+    bottom: 4px;
+    color: #b4b4b5;
+    font-size: 9px;
+    font-family: 'Arial';
+    margin: 0;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+/* On/Off FlipSwitch
+   generated at http://proto.io/freebies/onoff/*/
+.minute-toggle {
+    display: inline-block;
+    position: relative; width: 29px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.minute-toggle-checkbox {
+    display: none;
+}
+.minute-toggle-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border-radius: 50px;
+}
+.minute-toggle-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.minute-toggle-inner:before, .minute-toggle-inner:after {
+    float: left; width: 50%; height: 17px; padding: 0; line-height: 17px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.minute-toggle-inner:before, .minute-toggle-inner:after{
+    content: "";
+    background-color: #181819;
+}
+.minute-toggle-switch {
+    width: 13px; margin: 2px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    position: absolute; top: 0; bottom: 0;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.minute-toggle-checkbox:checked + .minute-toggle-label .minute-toggle-inner {
+    margin-left: 0;
+}
+.minute-toggle-checkbox:checked + .minute-toggle-label .minute-toggle-switch {
+    right: 0px; 
+}
+/* end On/Off FlipSwitch */

@@ -1,0 +1,59 @@
+<html>
+	<head>
+
+        <!-- Metadata -->
+        <title>Mitch Goudy - MHM</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Mitchell Goudy's demo app for Mapleton Hill Media" />
+        <meta name="author" content="Mitchell Goudy" />
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+
+        <!-- Style and Fonts -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+    <body>
+        <div id="container">
+            <div id="device">
+                <div id="device_content">
+                    <div id="first_row">
+                        <div id="screen">
+                            <img id="clock_img" src="img/clock.jpg">
+                            <p id ="clock_txt">8888</p>
+                            <p id ="clock_unit">MIN</p>
+                        </div>
+                        <div id="button_console">
+                            <div id="arrow_console">
+                                <button type="button" id="button_plus">+</button>
+                                <button type="button" id="button_minus">-</button>
+                            </div>
+                            <div id="power_console">
+                                <button type="button" id="button_power">PWR</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="second_row">
+
+                        <!-- On/Off FlipSwitch -->
+                        <div id ="onoffconsole">
+                            <p>MIN</p>
+                            <div class="minute-toggle">
+                                <input type="checkbox" name="minute-toggle" class="minute-toggle-checkbox" id="myminute-toggle">
+                                <label class="minute-toggle-label" for="myminute-toggle">
+                                    <div class="minute-toggle-inner"></div>
+                                    <div class="minute-toggle-switch"></div>
+                                </label>
+                            </div>
+                            <p>HRS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
