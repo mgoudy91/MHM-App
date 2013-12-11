@@ -25,15 +25,20 @@
 }
 
 
-/* Style */
+/* General */
 body{
     font-family: 'DS-Digital';
 }
 
+button{
+    outline:none;
+}
+
+/* Box model*/
 #container{
     width: 400px;
     height: 300px;
-    background-color: #cdcdcd;
+    background: #cdcdcd;
 }
 
 #device{
@@ -42,8 +47,8 @@ body{
     left: 45px;
     width: 308px;
     height: 148px;
-    /*TODO: TEXTURE*/
-    background-color: #323232; 
+    border-radius: 2px;
+    background: url("../img/background.png");
 }
 
 #device_content{
@@ -52,7 +57,6 @@ body{
     left: 26px;
     width: 256px;
     height: 97px;
-    /*background-color: green;*/
 }
 
 #first_row{
@@ -107,9 +111,17 @@ body{
 }
 
 #arrow_console button{
+    cursor: pointer;
     height: 22px;
     width: 22px;
     margin: 3px 0;
+    background-color: #252527;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #363638;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
     border-radius: 1px;
 }
 #arrow_console button:first-child{
@@ -124,12 +136,27 @@ body{
     border-radius: 2px;
 }
 #button_power{
+    cursor: pointer;
     height: 22px;
     width: 47px;
     margin: 3px;
+    background-color: #252527;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #363638;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
     border-radius: 1px;
 }
-
+#button_power p{
+    font-size: 7px;
+    color: #d6d6d6;
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+    
 #second_row{
     width: 256px;
     height: 33px;
