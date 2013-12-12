@@ -25,7 +25,7 @@
 }
 
 
-/* General */
+/* General purpose */
 body{
     font-family: 'DS-Digital';
 }
@@ -34,7 +34,7 @@ button{
     outline:none;
 }
 
-/* Box model*/
+/* Box model specific */
 #container{
     width: 400px;
     height: 300px;
@@ -79,10 +79,33 @@ button{
 #clock_txt{
     font-size: 42px;
     margin: 0;
-    min-width: 84px;
+    width: 84px;
     display: inline-block;
     opacity:0.0;
 }
+
+.digit{
+    display: inline-block;
+    margin: 0px;
+    min-width: 21px;
+    float: left;
+    text-align: right;
+    position: relative;
+    top: 8px;
+}
+.digit:nth-child(1){
+    opacity: .561;
+}
+.digit:nth-child(2){
+    opacity: .761;
+}
+.digit:nth-child(3){
+    opacity: .871;
+}
+.digit:nth-child(4){
+    opacity: .871;
+}
+
 #clock_unit{
     padding-left: 1px;
     color: white;
@@ -135,6 +158,10 @@ button{
     height: 28px;
     border-radius: 2px;
 }
+
+#power_console img{
+    float: left;
+}
 #button_power{
     cursor: pointer;
     height: 22px;
@@ -150,6 +177,7 @@ button{
     border-radius: 1px;
 }
 #button_power p{
+    padding-top: 2px;
     font-size: 7px;
     color: #d6d6d6;
     display: inline-block;
@@ -160,7 +188,6 @@ button{
 #second_row{
     width: 256px;
     height: 33px;
-    /*background-color: yellow;*/
 }
 
 #onoffconsole{
@@ -222,3 +249,42 @@ button{
     right: 0px; 
 }
 /* end On/Off FlipSwitch */
+
+/* Slider, jQuery UI custom theme */
+#slider_console{
+    position: absolute;
+    bottom:3px;
+    right: 0px;
+    display: inline-block;
+    float: right;
+}
+#slider{
+    width: 163px;
+    height: 7px;
+    background: black;
+}
+
+.ui-slider-range{
+    background: white;
+}
+
+.ui-widget-header{
+    background: none;
+}
+a.ui-slider-handle .ui-state-default .ui-corner-all .ui-state-focus{
+    width: 100px !important;
+
+}
+.ui-slider .ui-slider-handle {
+    outline:none;
+    cursor: pointer;
+}
+/* End Slider*/
+
+/* Tick marks */
+#slider_console img{
+    position: relative;
+    top: 4px;
+    left: 1px;
+    width: 164px;
+}

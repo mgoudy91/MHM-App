@@ -9,11 +9,12 @@
 
         <!-- Scripts -->
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
         <script type="text/javascript" src="js/site.js"></script>
 
         <!-- Style and Fonts -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
 
 	</head>
     <body>
@@ -21,18 +22,27 @@
             <div id="device">
                 <div id="device_content">
                     <div id="first_row">
+                        <!-- Screen -->
                         <div id="screen">
                             <img id="clock_img" src="img/clock.jpg">
-                            <p id ="clock_txt">8888</p>
+                            <div id ="clock_txt">
+                                <div class="digit" id="dig_1">8</div>
+                                <div class="digit" id="dig_2">2</div>
+                                <div class="digit" id="dig_3">3</div>
+                                <div class="digit" id="dig_4">4</div>
+                            </div>
                             <p id ="clock_unit">MIN</p>
                         </div>
                         <div id="button_console">
+                            <!-- Arrow buttons -->
                             <div id="arrow_console">
                                 <button type="button" id="button_plus"><img src="img/up.jpg"></button>
                                 <button type="button" id="button_minus"><img src="img/down.jpg"></button>
                             </div>
+                            <!-- Power button -->
                             <div id="power_console">
                                 <button type="button" id="button_power">
+                                    <img src="img/powerled.png">
                                     <p>PWR</p>
                                 </button>
                             </div>
@@ -53,6 +63,13 @@
                             </div>
                             <p>HRS</p>
                         </div>
+
+                        <!-- Slider -->
+                        <div id ="slider_console">
+                            <div id="slider"></div>
+                            <img src="img/ticks.png">
+                        </div>
+
                     </div>
                 </div>
             </div>
