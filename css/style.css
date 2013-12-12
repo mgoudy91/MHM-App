@@ -1,33 +1,20 @@
 /* Fonts */
 @font-face {
+    font-family: "DS-Digital";
+    src: url("../fonts/DS-DIGI.eot"); /* EOT file for IE */
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
     font-family: DS-Digital;
     src: url(../fonts/DS-DIGI.TTF);
     font-style: normal;
     font-weight: normal;
 }
-@font-face {
-    font-family: DS-Digital;
-    src: url(../fonts/DS-DIGIB.TTF);
-    font-style: normal;
-    font-weight: bold;
-}
-@font-face {
-    font-family: DS-Digital;
-    src: url(../fonts/DS-DIGII.TTF);
-    font-style: italic;
-    font-weight: normal;
-}
-@font-face {
-    font-family: DS-Digital;
-    src: url(../fonts/DS-DIGIT.TTF);
-    font-style: italic;
-    font-weight: bold;
-}
-
 
 /* General purpose */
 body{
-    font-family: 'DS-Digital';
+    font-family: 'DS-Digital', Fallback, sans-serif;
 }
 
 button{
@@ -87,7 +74,7 @@ button{
 .digit{
     display: inline-block;
     margin: 0px;
-    min-width: 21px;
+    width: 21px;
     float: left;
     text-align: right;
     position: relative;
